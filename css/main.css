@@ -354,28 +354,8 @@ strong {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
 }
-.switch-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    position: absolute;
-    top: 20px;
-    right: 30px;
-}
-@media screen and (max-width: 480px) {
-    .switch-wrapper {
-        top: 10px;
-        right: 20px;
-    }
-}
 .intro {
-    padding: 120px 100px;
+    padding: 100px 100px;
     height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
