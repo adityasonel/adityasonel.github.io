@@ -61,46 +61,26 @@ jQuery(function($) {
     };
     //typewrite effect
 
-    const introHeight = document.querySelector(".intro").offsetHeight;
-    const topButton = document.getElementById("top-button");
-    const $topButton = $("#top-button");
+    // const hand = document.querySelector(".emoji.wave-hand");
 
-    window.addEventListener(
-        "scroll",
-        function() {
-            if (window.scrollY > introHeight) {
-                $topButton.fadeIn();
-            } else {
-                $topButton.fadeOut();
-            }
-        },
-        false
-    );
+    // function waveOnLoad() {
+    //     hand.classList.add("wave");
+    //     setTimeout(function() {
+    //         hand.classList.remove("wave");
+    //     }, 2000);
+    // }
 
-    topButton.addEventListener("click", function() {
-        $("html, body").animate({ scrollTop: 0 }, 500);
-    });
+    // setTimeout(function() {
+    //     waveOnLoad();
+    // }, 1000);
 
-    const hand = document.querySelector(".emoji.wave-hand");
+    // hand.addEventListener("mouseover", function() {
+    //     hand.classList.add("wave");
+    // });
 
-    function waveOnLoad() {
-        hand.classList.add("wave");
-        setTimeout(function() {
-            hand.classList.remove("wave");
-        }, 2000);
-    }
-
-    setTimeout(function() {
-        waveOnLoad();
-    }, 1000);
-
-    hand.addEventListener("mouseover", function() {
-        hand.classList.add("wave");
-    });
-
-    hand.addEventListener("mouseout", function() {
-        hand.classList.remove("wave");
-    });
+    // hand.addEventListener("mouseout", function() {
+    //     hand.classList.remove("wave");
+    // });
 
     window.sr = ScrollReveal({
         reset: false,
