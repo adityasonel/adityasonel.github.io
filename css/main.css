@@ -889,6 +889,17 @@ strong {
         justify-content: center;
     }
 }
+@media screen and (max-width: 630px) {
+    .stack__rating {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 0px 0px 30px 0px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+}
 .footer__links a {
     position: relative;
     display: inline-block;
