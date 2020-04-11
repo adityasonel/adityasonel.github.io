@@ -1,6 +1,6 @@
-jQuery(function($) {
+jQuery(function ($) {
     //typewrite effect
-    var TxtType = function(el, toRotate, period) {
+    var TxtType = function (el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
         this.loopNum = 0;
@@ -10,7 +10,7 @@ jQuery(function($) {
         this.isDeleting = false;
     };
 
-    TxtType.prototype.tick = function() {
+    TxtType.prototype.tick = function () {
         var i = this.loopNum % this.toRotate.length;
         var fullTxt = this.toRotate[i];
 
@@ -38,12 +38,12 @@ jQuery(function($) {
             delta = 500;
         }
 
-        setTimeout(function() {
+        setTimeout(function () {
             that.tick();
         }, delta);
     };
 
-    window.onload = function() {
+    window.onload = function () {
         var elements = document.getElementsByClassName("typewrite");
         for (var i = 0; i < elements.length; i++) {
             var toRotate = elements[i].getAttribute("data-type");
@@ -82,17 +82,17 @@ jQuery(function($) {
     //     hand.classList.remove("wave");
     // });
 
-    window.sr = ScrollReveal({
-        reset: false,
-        duration: 600,
-        easing: "cubic-bezier(.694,0,.335,1)",
-        scale: 1,
-        viewFactor: 0.3
-    });
+    // window.sr = ScrollReveal({
+    //     reset: false,
+    //     duration: 600,
+    //     easing: "cubic-bezier(.694,0,.335,1)",
+    //     scale: 1,
+    //     viewFactor: 0.3
+    // });
 
-    sr.reveal(".background");
-    sr.reveal(".skills");
-    sr.reveal(".experience", { viewFactor: 0.2 });
-    sr.reveal(".featured-projects", { viewFactor: 0.1 });
-    sr.reveal(".other-projects", { viewFactor: 0.05 });
+    // sr.reveal(".background");
+    // sr.reveal(".skills");
+    // sr.reveal(".experience", { viewFactor: 0.2 });
+    // sr.reveal(".featured-projects", { viewFactor: 0.1 });
+    // sr.reveal(".other-projects", { viewFactor: 0.05 });
 });
